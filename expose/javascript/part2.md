@@ -33,3 +33,4 @@
     value
     
 15. The difference between the == and === operators is that == checks with type conversions while === checks with strightly no type conversions
+17. The result is that it returns a array of the original array numbers [1,2,3] but down doubled to [2,4,6]. This is because for each index, we call back to the doSomething function, which doubles the numbers at each index per each callback, giving us this changed array.

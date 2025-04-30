@@ -11,6 +11,25 @@
 11. This function returns the updated discounted prices, such as in this case, [ 50, 100, 150 ]. Even though we changed the variable type, we don't reassign the variables, only assigning them once.
 12. a) student.name
     b) student['Grad Year']
-    c)
-    d)
+    c) student.greeting()
+    d) student['Favorite Teacher'].name
     e) student.courseLoad[0]
+    
+13. a) It gives us 32, as 3 mapped to its exact string representation
+    b) '3' - 2 gives us one, as JavaScript converts the 3 to an integer able to       subtract
+    c) 3 + null gives us 3, as null in JavaScript undergoes a numeric conversion       to 0 in this operation
+    d) '3' + null gives us 3null, as null becomes a string to attach onto in this     operation
+    e) true + 3 = 4 as true undergoes a numeric conversion to 1 in these types of     situations in JavaScript
+    f) false + null = 0 as in numeric conversions, both false and null are 0, so      0 + 0 = 0
+    g) '3' + undefined = 3undefined as undefined gets converted into a string to      attach onto 3
+    h) '3' - undefined = NaN, as since undefined is not a valid number and this       is not a valid operation in JavaScript, we get NaN
+
+14. a) '2' > 1 = true, as string '2' converts to the number 2
+    b) '2' < '12' = false, because in dictionary comparisons, the first char "2"      is greater than the first char "1", both strings are not converted to             numbers for this
+    c) 2 == '2' = true because the char '2' is converted to a number
+    d) 2 === '2' = false, since triple equals checks with no type conversion, and      seeing the two be different types makes it automatically false
+    e) true == 2 is false in this case, as true is converted to 1, and 1 is less      than 2
+    f) true === Boolean(2) = true because numbers like 2 get converted into true 
+    value
+    
+15. The difference between the == and === operators is that == checks with type conversions while === checks with strightly no type conversions
